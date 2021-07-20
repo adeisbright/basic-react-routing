@@ -1,0 +1,168 @@
+Understanding and Learning React 
+---------------------------------- 
+1.0 Why React 
+============== 
+React is a javascript library for building user interface.
+It makes it painless to create interactive UIs.
+You can design simple states for your application and react will render data changes when they occur.
+React is Declarative ,Component Based , and you can write it anywhere whether for mobile (react-native) , 
+desktop(electron) , and for web.
+React can be used to render on the server side also.
+
+The Problem before the advent of react had to do with handling data change within an application.
+The state of an app changes as data is transformed or transferred.
+Handling this changes before now means manipulating the DOM.
+DOM manipulation is an expensive process that has to do with tearing down and building up of the DOM structure.
+With react we do not interact with the DOM directly instead we communicate with a Virtual DOM .
+
+When building UIs  , it is good to be able to composed or reused already existing UI into section of our applications.
+React makes the process to be very simple , clean  , and painless.
+
+Today , we want to allow our application to look like native apps.
+There should be no reload. This type of web applications are known as Single Page Applications.
+They only communicate with the backend infrastructure through the use of an API.
+
+The benefits that come with using react far outweighs just sticking with vanilla js. 
+
+
+HOW TO INSTALL REACT 
+npm install create-react-app 
+
+npx create-react-app myApp 
+cd myApp 
+... You should see the following directory structure 
+public 
+index.html 
+src 
+package.json 
+yarn.lock 
+
+Every of your files should be stored within the src directory.
+To test react app : npm test 
+to build the application : npm run build  
+to start the application : npm start 
+npm start to launch the application 
+
+The things you should focus on while learning react are :
+i.  Understand the concepts and terminologies 
+ii.  Learn on how to think in composing your components 
+iii. Learn Context and refs 
+iv. Understand the Applications 
+v. Learn how to route using  
+
+Decisions to make when trying to use react for your ecosystem development ::
+When learning react or trying to build a new single page application , use create-react-app 
+If you are trying to build a server rendered website then go with next.js 
+If you are trying to build a static content oriented website then use Gatsby 
+
+Example 1.0 Hello World with React - HelloWorld.js 
+------------------------ 
+> create a file HelloWorld.js 
+> fill the content  
+> now require the app in index.js 
+
+
+2.0 Understanding Element and Components 
+============================================= 
+An element refers to a single representation of data within react application.
+An HTML element is an element within react.
+
+A component is an aggregation of elements 
+
+
+3.0 JSX , PROPS
+=================== 
+JSX is Javascript as XML.
+Its a syntax extension to javascript.
+JSX produces react rendered elements .
+
+React uses the notion that rendering a component is inherently coupled with other UI logics like how events 
+are handled , how the state changes over time  , and how data is prepared for display. 
+React elements are what you want to see on the screen.
+Instead of seperating markup and logic in seperate files , react uses seperation of concerns with loosely coupled units
+called components . 
+
+A component must be named using Pascal notation.
+You can put any valid js inside a jsx. 
+
+To specify an attribute inside a jSx USE CURLy brace
+JSX may contain children.
+
+Elements are the most basic building blocks for react application but a UI is composed  of components.
+
+When you render your UI , updating the application is to only update the portion of it that changed.
+It is not good to destroy the entire an application because a portion of the app changed.
+Example 2.0 Jsx.js - Learning how to write JSX 
+
+4.0 COMPONENTS 
+=============== 
+Components let you split the UI into independent reusable pieces , and think about each piece in isolation.
+They are like javascript functions. They accept arbitrary inputs (called props) and return react elements 
+describing what should appear on the screen. 
+Two ways to create component : 
+> Function 
+
+> Class 
+
+Modern development moves toward the use of functions in creating components and using hooks to manage state. 
+
+You can compose components from other smaller components.
+When building your UI , begin from .
+A props is read only.
+Example 3- Component.js 
+
+5.0 State 
+========= 
+A state change occurs when data changes form or value .
+To handle this state , the logic must be composed with the rendering logic.
+In a large application , the way the state changes may be varying , so you will need to properly manage state.
+
+Example 4.0 -State.js 
+
+
+THINKING IN REACT 
+=================== 
+i. Start with a mock of the app
+II. Break the UI into component hierachy 
+iii. Build a static version of the app without state 
+iv. Identify - the minimal represeentation of the UI state Find or determine which component is stateful - The data must 
+v. 
+
+React.Fragment is used to composed many elements without creating new dom elements 
+React.Component is the es6 base class for creating components in react 
+Suspense is lets component wait for something before rendering . It is use for loading components 
+dynamically with react.Lazy  
+
+React.lazy lets you define a component that is loaded dynamically. This helps reduce the bundle size to delay 
+loading components that arent used during the initial render. 
+
+The component should be called from inside a Suspense  so that we call show a fallback component while the 
+dynamic component is loading .
+React.lazy supports only default export.
+Ensure to use error boundary to handle error should the component used in the fallback not displayed properly
+REACT ROUTER 
+============ 
+
+The Basic Tools in Routing within React are  : 
+BrowserRouter  sits atop of the routing mechanism
+Switch is used for setting the routing conditions and decide which component to call base on the route
+Route this is the route matcher 
+Path sets a path 
+Link  works as the link  
+
+import  {
+    BrowserRouter as Router , 
+    Switch , Route , Link 
+} from "react-router-dom" 
+
+
+<Link to="/login">Login</Link>
+
+HOOKS 
+========
+Hooks let you use state and other react features without writting a class 
+
+
+Handling Authentication 
+==========================
+

@@ -1,0 +1,13 @@
+body {
+    background : rgb(208, 209, 136) ; 
+    padding-top : 10rem;
+}
+.bg-green{
+    background : rgb(9, 107, 9);
+}
+.bg-red {
+    background : rgb(151, 5, 5);
+}
+.bg-blue {
+    background: #339;
+}

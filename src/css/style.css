@@ -1,0 +1,324 @@
+
+.framer {
+    padding-right : 20px;
+    padding-left: 20px;
+}
+.header {
+    padding-top : 1.25rem;
+    padding-bottom: 1.25rem;
+} 
+.bg-header {
+    background : rgba(240, 244, 245, 0.945);
+}
+.w-15 {
+    width : 15%;
+} 
+.main-navigation a:not(button)  , .main-navigation a:hover , .brand , .brand:hover , aside a {
+    text-decoration: none; 
+    color : #000!important
+} 
+.pad-top-20 {
+    padding-top : 3rem
+}
+.font-2 {
+    font-size : 3rem;
+}
+.m-bottom {
+    margin-bottom : 2rem
+} 
+.hero-text {
+    font-size : 1.4rem;
+    margin-bottom: 1rem;
+}
+/* .my-div div:nth-child(odd) {
+   margin-right : 15px; 
+} */
+.m-r-5 {
+    margin-right : 15px; 
+}
+.m-b-5 {
+    margin-bottom : 5rem!important;
+} 
+.border-at-bottom {
+    padding-bottom : 1rem ; 
+    border-bottom : 2px solid #ccc;
+    margin-bottom: 1.5rem;
+}
+.pad-50 {
+    padding : 5rem
+}
+.main-navigation a {
+    margin-right :2.5rem ; 
+    font-size: 1.5rem;
+}
+aside a { 
+    display : block;
+    margin-bottom: 1.5rem;
+} 
+.pad-top-10 {
+    padding-top : 10px
+}
+a.user-link {
+    padding : 10px 20px ; 
+    transition : background-color 2s
+}
+a.user-link:hover{
+    border : none ; 
+    outline : 0;
+    background : #ccc;
+    margin-bottom: 3rem;
+    
+}
+.has-dropdown {
+    display : inline !important; 
+    position : relative;
+  }
+  .is-drop-content a {
+    display : block;
+    margin-bottom: 1.5rem;
+    color : #18181A ; 
+    text-decoration: none;
+  }
+  .is-drop-content {
+    position : absolute ; 
+    transform : translateX(-100px) ;
+    top : 45px;
+    /* top : 45px;
+    left : 0;
+    right : 10px; */
+    border-radius : 10px;
+    /* box-shadow : 0 1px 2px #ccc, 0 1px 2px #222; */
+    background : #fff;
+    padding : 1rem;
+    z-index : 300000;
+    min-width : 300px;
+    display : none;
+  }
+  .has-dropdown:hover .is-drop-content {
+    display : block
+  }
+  .has-dropdown > a {
+    text-decoration : none ; 
+    opacity : .95;
+   
+    font-family : "Segoe UI" , Helvetica , "Helvetica neue" , sans-serif;
+    transition : color 2s;
+} 
+.img-circle {
+    border-radius:50%;
+    height :40px;
+    width : 40px;
+}
+.m-b-2 {
+    margin-bottom: 2px;
+}
+.anchor-block a {
+    display : block;
+    font-size: 1rem;
+    margin-bottom: 3px;
+}
+a.job-link{
+    color : #fff;
+}
+*.faint-text , a.faint-text  {
+    color : rgb(211, 195, 195);
+    font-size: .95rem;
+}
+.border-b-faint {
+    border-bottom : 1px solid #ccc;
+}
+.bg-blue {
+    background : rgb(23, 108, 206)
+} 
+.pad-top {
+    padding-top : 20px
+}
+.pad-20 { 
+    padding : 20px;
+}
+.border-around-white {
+    border : 1px solid #fff;
+}
+.tabs-panel {
+    border-bottom : 1px solid #ccc;
+    padding-bottom : 1rem;
+}
+.tabs-panel a {
+    margin-right : 1.2rem;
+}
+.bg-red {
+    background : rgb(218, 84, 84);
+} 
+.border-faint {
+    border : 2px solid #ccc;
+}
+.border-around-blue {
+    border : 1px solid rgb(23, 108, 206)
+}
+.m-b-2r {
+    margin-bottom : 2rem;
+}
+.flex {
+    display : flex ;
+    justify-content: space-between;
+}
+.pad-10 {
+    padding : 10px
+}
+.input {
+    border-radius: 5px;
+    margin-bottom : 1rem;
+} 
+.sticky-again {
+    position : -webkit-sticky!important ; 
+    position : sticky!important ; 
+    top : 0 ; 
+    background : #fff;
+    z-index : 40;
+    width : 100% ;
+    padding-bottom : 20px;
+    /* box-shadow: 0 3px 6px 0 rgba(126, 82, 82, 0.05)  */
+}
+.edit-text {
+    font-size: 1rem;
+}
+/* Styling mobile navbar */
+.mobile-toggle {
+    padding-top : 10px;
+}
+  .mobile-toggle  button {
+   border : none ;
+   outline : none ; 
+   background : none;
+   /* padding-top: 5px; */
+  }
+  .mobile-toggle  span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background : #000;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    left: 0;
+    opacity: 1;
+  } 
+  .mobile-toggle  span:nth-child(2){
+    width: 15px;
+  }
+  
+  .mobile-toggle  span:nth-child(1),
+  .mobile-toggle span:nth-child(3) {
+    transition: -webkit-transform .35s ease-in-out;
+    transition: transform .35s ease-in-out;
+  } 
+  .mobile-toggle :not(.change-toggle) span:nth-child(1) , .mobile-toggle :not(.change-toggle) span:nth-child(3) {
+    position: absolute;
+    /* left: 25px; */
+    top: 5px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    opacity: 0.9;
+  }
+  .mobile-toggle :not(.change-toggle) span:nth-child(2) {
+    height: 12px;
+    visibility: hidden;
+    background-color: transparent;
+  }  
+  .mobile-toggle :not(.change-toggle) span:nth-child(3) {
+    /* position: absolute; */
+    /* left: 25px; */
+    /* top: 5px; */
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    /* opacity: 0.9; */
+  } 
+.mobile-navigations {
+    position:fixed;
+    /* top : 50px; */
+    top : 0 ;
+    left : 0;
+    height: 100%; 
+    width : 50%;
+    padding : 1rem 0 ; 
+    z-index : 9000000000000000;
+    box-shadow: 0 4px 8px 0 rgba(0 , 0 , 0 , 0.2) , 0 6px 20px 0 rgba(0 , 0 , 0 , 0.19);
+    background : #fff;
+    transition: transform 2s;
+    padding-left : 20px;
+    overflow : scroll;
+} 
+.out-of-view {
+    transform: translateX(-1000px);  
+}
+.mobile-navigations a {
+    display : block;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+/* Style for handling interactive validation*/ 
+.border-error-color {
+    border-color: #f00;
+    animation : shaking .5s ease 0ms infinite alternate ; 
+} 
+#started:hover, #learn:hover {
+    text-decoration : none;
+    color : #000
+}
+@keyframes shaking {
+    0%{
+        transform : translateX(10px)
+    }
+    100%{
+        transform : translateX(0px)
+    }
+}
+.border-good-color {
+    border-color: rgb(6, 200, 6);
+} 
+.border-moderate-color {
+    border-color: dodgerblue; 
+    animation : shaking .5s ease 0ms infinite alternate ; 
+} 
+.loader {
+    border : 16px solid #f3f3f3;
+    /* You can keep adding more spinners via border-side  */
+    border-top : 16px solid #3498db;
+    border-bottom : 16px solid rgb(234, 0, 255);
+    border-radius : 50% ; 
+    width : 20px;
+    height : 20px;
+    animation : spin 2s linear infinite
+  } 
+@keyframes spin {
+    0% {
+      transform : rotate(0deg);
+    }
+    100% {
+      transform : rotate(360deg)
+    }
+}
+@media (max-width : 576px ){
+    .pad-20 {
+        padding : 5px;
+        line-height: 2.0;
+    }
+}
+@media (min-width : 768px ){ 
+    .framer {
+        padding-right : 130px;
+        padding-left : 130px;
+    }
+    .edit-text {
+        font-size: 2rem;
+    }
+} 
+
+.bg-red {
+    background : #f00
+}
+.m-r-2 {
+    margin-right : 2px;
+}

@@ -1,0 +1,62 @@
+Cross Origin Resource Sharing - CORS 
+========================== 
+Cross Origin Resource Sharing is a mechanism that allows restricted resources on a web page 
+to be requested from another domain outside the domain from which the first resource was served.
+A web page may freely embed cross origin contents of any type.
+The Same Origin Security Policy forbids request of resource on a domain different from the domain  
+on which it was first served when a cross domain request is made. Cross domain request are request like 
+AJAX  , Fetch , or any other API calls. 
+This policy defines a way in which a browser and server can interact to determine whether it is 
+safe to allow the cross-origin requests.
+
+Access-Control-Allow-Origin : https://bigjara.com meaning allow bigjara.com to fetch a resource or update 
+Access-Control-Allow-Origin:* means you should allow all request. This is suitable if the content is intended to serve  
+   the public 
+
+Browsers preflight CORS request to ensure the server understands what type of operation they want to perform with
+the request.
+Preflighting just have to do with telling the web service whether you want to use PUT , POST , etc
+Access-Control-Allow-Origin:* 
+Access-Control-Allow-Methods : PUT,GET
+
+The request headers that relates to CORS include but not limited to the following : 
+>Origin 
+>Access-Control-Request-Method 
+>Access-Control-Request-Headers 
+
+The response headers that relates to CORS are :
+>Access-Control-Allow-Origin 
+>Access-Control-Allow-Credentials 
+>Access-Control-Expose-Headers 
+>Access-Control-Max-Age 
+>Access-Control-Allow-Methods 
+>Access-Control-Allow-Headers 
+Two ways to implement CORS on node server is through the use of :
+> Using cors module 
+  let cors = require("cors") 
+  app.use(cors()) - Will allow request from anywhere 
+  app.get("/" , cors , (req , res) => {}) // Will allow request from only this route 
+  ...Configuring cors ..... 
+    var corsOptions = {
+       origin: 'http://example.com',
+       preflightContinue : false  , //Should Preflight be passed to the next middleware
+       optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204 
+       methods : "GET , POST, PUT , DELETE"
+    } 
+
+    app.get('/products/:id', cors(corsOptions), function (req, res, next) {
+        res.json({msg: 'This is CORS-enabled for only example.com.'})
+    })
+
+> Building your own module that is configurable - Call it bigjara-cors
+BROWSER FETCH API 
+================= 
+
+HANDLING OF MULTIPART/FORM-DATA 
+================================ 
+
+JSON WEB TOKENS JWT 
+===================== 
+
+WEB STORAGE
+============= 

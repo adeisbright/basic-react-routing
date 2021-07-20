@@ -1,0 +1,17 @@
+body {
+    background : rgb(208, 209, 136) ; 
+    padding-top : 10rem;
+}
+.pad-well {
+    padding: 2rem;
+}
+.orange-text {
+    color : #ffa500;
+    font-size: 3rem;
+} 
+.bg-blue {
+    background:#339;
+}
+.light-blue-text {
+    color : rgb(55, 98, 177)
+}

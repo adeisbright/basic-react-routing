@@ -1,0 +1,11 @@
+React Course Outline 
+-------------------- 
+1. JSX , props ,  and Components (JSX is javascript as XML - A new language that uses HTML inside javascript) 
+   A props can be like to function parameters.
+   You create them during component and pass values during calling of componet
+   Functional Component 
+   Class Component
+2. Concept of Pure Functions 
+   Definition 
+   Features 
+3. State
